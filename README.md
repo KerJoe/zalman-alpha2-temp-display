@@ -32,3 +32,7 @@ To add the driver as a Systemd service on boot run:
 
 By default the Tctl value reported by lm_sensors is displayed.
 You can replace it with another (e.g. Tccd1), by modifying `grep` capture in `run.sh` or `zalman_temp_display_writer.service`.
+
+# License
+
+The software is released under the GNU General Public License (GPL) which can be found in the file LICENSE.txt in the same directory as this file.
