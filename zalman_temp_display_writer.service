@@ -1,0 +1,13 @@
+[Unit]
+Description=Zalman Alpha2 A24 Temperature Display Driver Data Source
+After=lm_sensors.service zalman_temp_display.socket
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/sh -c "while true; do sensors 2> /dev/null | grep Tctl | grep -o -P '(?<=\+)[0-9]+'; sleep 1; done"
+StandardOutput=file:/run/zalman_temp_display.fifo
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

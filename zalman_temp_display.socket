@@ -1,0 +1,10 @@
+[Unit]
+Description=Zalman Alpha2 A24 Temperature Display Driver Socket
+After=local-fs.target
+
+[Socket]
+ListenFIFO=/run/zalman_temp_display.fifo
+Service=zalman_temp_display.service
+
+[Install]
+WantedBy=multi-user.target
