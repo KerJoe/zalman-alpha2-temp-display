@@ -17,7 +17,7 @@ Arch: `pacman -S python python-hidapi`
 
 To do a quick test run:
 ```
-./run.sh
+$ ./run.sh
 ```
 
 To add the driver as a Systemd service on boot run:
