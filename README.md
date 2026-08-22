@@ -15,12 +15,12 @@ Arch: `pacman -S python python-hidapi`
 
 # Usage
 
-To do a quick test run:
+To do a quick test, run:
 ```
 $ ./run.sh
 ```
 
-To add the driver as a Systemd service on boot run:
+To add the driver as a startup Systemd service, run:
 ```
 # cp zalman_temp_display.py /usr/local/bin/zalman_temp_display
 # cp zalman_temp_display.service zalman_temp_display.socket zalman_temp_display_writer.service /etc/systemd/system/
