@@ -2,7 +2,7 @@
 
 ![Alpha2 White](alpha2wh.png)
 
-Userspace Python USB HID Driver and Systemd services for Zalman Alpha2 A24/A36 liquid coolers.
+Userspace Python USB HID Linux Driver and Systemd services for Zalman Alpha2 A24/A36 liquid coolers.
 
 # Requirements
 
