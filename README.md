@@ -8,6 +8,7 @@ Userspace Python USB HID Linux Driver and Systemd services for Zalman Alpha2 A24
 
 - Python 3.9+
 - `python-hidapi` system package
+- `sensors` program from lm-sensors
 
 Debian: `apt install python3 python-hidapi lm-sensors`
 
