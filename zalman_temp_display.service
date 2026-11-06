@@ -4,6 +4,7 @@ After=local-fs.target
 
 [Service]
 Type=simple
+# If not using .socket service, creates FIFO manually
 ExecStartPre=-/usr/bin/mkfifo /run/zalman_temp_display.fifo
 StandardInput=file:/run/zalman_temp_display.fifo
 ExecStart=/usr/local/bin/zalman_temp_display
